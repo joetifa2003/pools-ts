@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "test": "npm run build && node --test",
+    "bench": "npm run build && node dist/bench"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "rimraf": "^5.0.1",
+    "tinybench": "^2.5.0",
+    "typescript": "^5.2.0-beta"
+  }
+}
